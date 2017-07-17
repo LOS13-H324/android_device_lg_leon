@@ -61,44 +61,44 @@ PRODUCT_PACKAGES += \
 
 # Audio	
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lg/my90ds/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lg/my90ds/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lg/my90ds/rootdir/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    device/lg/my50ds/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lg/my50ds/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lg/my50ds/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/lg/my50ds/rootdir/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
 
 # Thermal
 PRODUCT_COPY_FILES += \
-     device/lg/my90ds/rootdir/system/etc/thermal/thermal.conf:system/etc/.tp/thermal.conf \
-     device/lg/my90ds/rootdir/system/etc/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
-     device/lg/my90ds/rootdir/system/etc/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf
+     device/lg/my50ds/rootdir/system/etc/thermal/thermal.conf:system/etc/.tp/thermal.conf \
+     device/lg/my50ds/rootdir/system/etc/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
+     device/lg/my50ds/rootdir/system/etc/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
+    device/lg/my50ds/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
 
 # Hostapd
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/lg/my90ds/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/lg/my90ds/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
+    device/lg/my50ds/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/lg/my50ds/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/lg/my50ds/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
 	
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 # RAMDISK
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/root/init.magna_common.rc:root/init.magna_common.rc \
-    device/lg/my90ds/rootdir/root/enableswap.sh:root/enableswap.sh \
-    device/lg/my90ds/rootdir/root/init.protect.rc:root/init.protect.rc \
-    device/lg/my90ds/rootdir/root/init.modem.rc:root/init.modem.rc \
-    device/lg/my90ds/rootdir/root/factory_init.rc:root/factory_init.rc \
-    device/lg/my90ds/rootdir/root/ueventd.magna.rc:root/ueventd.magna.rc \
-    device/lg/my90ds/rootdir/root/init.magna.usb.rc:root/init.magna.usb.rc \
-    device/lg/my90ds/rootdir/root/init.zeta0y_core.rc:root/init.zeta0y_core.rc \
-    device/lg/my90ds/rootdir/root/init.magna.rc:root/init.magna.rc \
-    device/lg/my90ds/rootdir/root/fstab.my90ds:root/fstab.my90ds
+    device/lg/my50ds/rootdir/root/init.leon_common.rc:root/init.leon_common.rc \
+    device/lg/my50ds/rootdir/root/enableswap.sh:root/enableswap.sh \
+    device/lg/my50ds/rootdir/root/init.protect.rc:root/init.protect.rc \
+    device/lg/my50ds/rootdir/root/init.modem.rc:root/init.modem.rc \
+    device/lg/my50ds/rootdir/root/factory_init.rc:root/factory_init.rc \
+    device/lg/my50ds/rootdir/root/ueventd.leon.rc:root/ueventd.leon.rc \
+    device/lg/my50ds/rootdir/root/init.leon.usb.rc:root/init.leon.usb.rc \
+    device/lg/my50ds/rootdir/root/init.zeta0y_core.rc:root/init.zeta0y_core.rc \
+    device/lg/my50ds/rootdir/root/init.leon.rc:root/init.leon.rc \
+    device/lg/my50ds/rootdir/root/fstab.my50ds:root/fstab.my50ds
     
    
 
@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
 # call the proprietary setup
-$(call inherit-product, vendor/lg/my90ds/my90ds-vendor.mk)
+$(call inherit-product, vendor/lg/my50ds/my50ds-vendor.mk)
 
 PRODUCT_PACKAGES += \
     charger \
