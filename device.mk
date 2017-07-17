@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
 	
 # GPS
 PRODUCT_COPY_FILES += \
-     device/lg/my90ds/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
+     device/lg/my50ds/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
 PRODUCT_PACKAGES += \
     gps.mt6582
